@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const DATA = [
+  // { id: "todo-0", name: "n1", level: 1 },
+  // { id: "todo-1", name: "n2", level: 1 },
+  // { id: "todo-2", name: "n3", level: 1 }
+];
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App tasks={DATA} />
   </React.StrictMode>,
   document.getElementById('root')
 );
